@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import AnalogClock from './AnalogClock'; // Make sure it's in the same folder or adjust path
 
 const Clock: React.FC = () => {
   const [time, setTime] = useState(new Date());
@@ -9,8 +10,9 @@ const Clock: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-900 text-white">
-      <div className="text-center">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white">
+      <AnalogClock />
+      <div className="text-center mt-6">
         <h1 className="text-6xl font-mono tracking-wide">
           {time.toLocaleTimeString()}
         </h1>
