@@ -1,7 +1,7 @@
-import Clock from './components/Clock';
+import ClockGallery from './components/ClockGallery';
 
 function App() {
-  return <Clock />;
+  return <ClockGallery />;
 }
 
 export default App;

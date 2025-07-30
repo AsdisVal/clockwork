@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+  
+  .clock-gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .clock-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+  
+  .clock-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .clock-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .clock-svg-wrapper {
+    background: white;
+    border-radius: 50%;
+    padding: 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    margin-bottom: 1.5rem;
+  }
+  
+  .city-name {
+    font-size: 2rem;           /* ⬆ from 1.75rem */
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+  }
+  
+  .digital-time {
+    font-family: monospace;
+    font-size: 2rem;        /* ⬆ from 1.5rem */
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .date-text {
+    font-size: 3rem;           /* ⬆ from 0.875rem */
+    color: #555;
+  }
+  
+  .accent-line {
+    height: 2px;
+    width: 48px;
+    margin-top: 1rem;
+    transition: width 0.3s ease;
+  }
+  
+  .clock-card:hover .accent-line {
+    width: 64px;
+  }
+  
+  .footer {
+    margin-top: 4rem;
+    font-size: 2rem;           /* ⬆ from 0.875rem */
+    color: #888;
+  }
+  
